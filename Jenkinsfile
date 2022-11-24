@@ -15,7 +15,7 @@ node
     
     stage('Run Docker Compose') {
   
-        sh '''( docker-compose down && docker-compose up) || (docker-compose up)
+        sh '''( docker-compose down && docker-compose up -d ) || (docker-compose up -d )
 '''
         
 //         def containerExists = sh(returnStdout: true, script: 'docker ps -a -f name=html_docker_jenkins_ci_cd' ) 

@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  nodejs_mongodb_docker:
-    image: nodejs_mongodb_docker
+  docker-compose-ci-cd:
+    image: docker-compose-ci-cd
     build: .
     environment:
       NODE_ENV: production
